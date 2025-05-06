@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Products{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="mb-4">All Products</h2>
+        <div class="row">
+            {% for product in products %}
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img src="{{ product[5] or 'https://via.placeholder.com/150' }}" class="card-img-top" alt="{{ product[1] }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product[1] }}</h5>
+                        <p class="card-text">{{ product[2][:50] }}...</p>
+                        <p class="fw-bold">{{ product[3] }} RWF</p>
+                        <p class="text-muted">Stock: {{ product[4] }}</p>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <a href="{{ url_for('product_detail', product_id=product[0]) }}" class="btn btn-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

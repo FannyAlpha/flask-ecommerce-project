@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block title %}About Us - ShopEase{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <!-- Hero Section -->
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bold mb-4">About <span class="text-primary">ShopEase</span></h1>
+                <p class="lead text-muted">Making shopping effortless and enjoyable since 2023</p>
+            </div>
+
+            <!-- Our Story Section -->
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-body p-4 p-lg-5">
+                    <h2 class="fw-bold mb-4">
+                        <i class="bi bi-book me-2 text-primary"></i>Our Story
+                    </h2>
+                    <p class="text-muted mb-4">
+                        Founded in 2023, ShopEase began with a simple mission: to revolutionize online shopping by 
+                        combining high-quality products with exceptional customer service. What started as a small 
+                        team of passionate individuals has blossomed into a trusted e-commerce destination serving 
+                        thousands of satisfied customers worldwide.
+                    </p>
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                        <span class="small">Trusted by 50,000+ customers</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Mission Section -->
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-body p-4 p-lg-5">
+                    <h2 class="fw-bold mb-4">
+                        <i class="bi bi-stars me-2 text-primary"></i>Our Mission
+                    </h2>
+                    <p class="text-muted mb-4">
+                        At ShopEase, we're committed to offering carefully curated products that perfectly blend 
+                        quality, functionality, and style. Our dedicated team works tirelessly behind the scenes 
+                        to ensure every purchase exceeds your expectations and brings genuine value to your life.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Curated selection of premium products
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Fast and reliable shipping
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Exceptional customer support
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .text-primary {
+        color: #4e73df !important;
+    }
+    
+    .bg-light {
+        background-color: #f8f9fa !important;
+    }
+    
+    .shadow-sm {
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    }
+</style>
+{% endblock %}
